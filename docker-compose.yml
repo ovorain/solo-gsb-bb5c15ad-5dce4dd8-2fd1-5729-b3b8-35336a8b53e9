@@ -1,0 +1,7 @@
+services:
+  negotiate:
+    build: .
+    image: http-negotiation-debugger
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
